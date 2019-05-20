@@ -226,7 +226,8 @@ public class Product extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent userintent = new Intent(this,UserActivity.class);
+            startActivity(userintent);
         }
 
         return super.onOptionsItemSelected(item);
